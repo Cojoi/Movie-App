@@ -78,3 +78,46 @@ h1{
 .movie-list p{
     color: white;
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+      max-width: 90%;
+    }
+  }
+  .movie-list{
+    border-radius: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5%;
+    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+}
+  
+  /* Adjust layout for even smaller screens */
+  @media only screen and (max-width: 480px) {
+    .container {
+        max-width: 80%;
+      }
+
+    h1 {
+      font-size: 40px;
+    }
+    .movie-list{
+        border-radius: 10%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 5%;
+        padding: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        justify-content: center;
+    }
+}
+  /* Adjust layout for landscape orientation on smaller screens */
+  @media only screen and (max-width: 600px) and (orientation: landscape) {
+    h1 {
+      font-size: 40px;
+    }
+  }
