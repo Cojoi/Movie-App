@@ -94,11 +94,16 @@ h1{
 .movie-list img{
     max-width: 200px;
     display: block;
-    margin-bottom: 1rem;
 }
   
   
   @media only screen and (max-width: 480px) {
+    h1{
+      padding-bottom: 10%;
+    }
+    .searchContainer {
+        padding-bottom: 20%;
+      }
     .container{
         max-width: 100%;
     }
@@ -106,19 +111,13 @@ h1{
       font-size: 40px;
     }
     .movie-list{
-        border-radius: 10%;
         display: grid;
         grid-template-columns: auto auto;
-        gap: 5%;
-        padding: 5%;
-        margin-left: 5%;
-        margin-right: 5%;
         justify-content: center;
     }
     .movie-list img{
         max-width: 150px;
         display: block;
-        margin-bottom: 1rem;
     }
 }
   @media only screen and (max-width: 600px) and (orientation: landscape) {
